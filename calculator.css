@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: arial Roboto, sans-serif;
+}
+section{
+    background-color:rgb(255, 187, 0);
+    height: 100vh;
+    width:100vw;
+    color:teal;
+}
+.calculator{
+    border: 3px teal solid;
+    width:400px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+#calculator-screen{
+    margin:10px;
+    background-color: #36412F;
+    border-radius:5px;
+    border:2px teal solid;
+    transition: background-color 500ms ease;
+    padding:5px;
+    min-width: 5rem;
+}
+.expression{
+    height:1rem;
+    width:100%;
+    letter-spacing: 2px;
+
+}
+.result{
+    height:4rem;
+    width:100%;
+    font-size: 2rem;
+    text-align: right;
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
+.result span {
+    font-family: 'Orbitron', sans-serif;
+
+}
+#calculator-screen.active{
+    background-color:rgb(134, 99, 0)
+}
+.calc-logo{
+    display:flex;
+    justify-content: space-between;
+    font-family:'Langar', cursive;
+    font-size: 2rem;
+    margin: 10px;
+    
+}
+.min-desc{
+    font-size:1rem;
+    text-align: right;
+    font-weight:bold;
+}
+.calculator-buttons{
+    padding: 0 1rem 1rem;
+}
+.calculator-buttons span{
+    cursor: pointer;
+    border: teal 2px solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 2px rgb(98, 128, 128) ;
+    padding:5px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.func-buttons{
+    padding:10px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    gap:20px;
+
+}
+.btn-section{
+    display:grid;
+    width:100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+.btn-sep{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    padding:10px;
+    margin:auto;
+    gap:20px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.basic-btns{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    justify-content: space-between;
+}
+
+@media(max-width:480px){
+    .calculator{
+        width:90vw;
+    }
+    .btn-sep{
+        gap:10px;
+    }
+    
+}

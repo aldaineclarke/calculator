@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/calculator.css">
+</head>
+<body>
+    <section>
+        <audio src="/click.mp3"></audio>
+        <div class="calculator">
+            <div id="calculator-screen" class="">
+                <div class="expression"><span></span></div> 
+                <div class="result"><span></span></div>
+            </div>
+            <div class="calc-logo">Mamba <span class="min-desc">10 digit calculator </span></div>
+            <div class="calculator-buttons">
+                <div class="func-buttons">
+                    <span class="func-button" id="mem-">M-</span>
+                    <span class="func-button" id="mem+">M+</span>
+                    <span class="operator">%</span>
+                    <span class="func-button" id="clear">C/CE</span>
+                </div>
+                <div class="btn-section">
+                    <div class="basic-btns">
+                        <span id="off-btn">OFF</span>
+                        <span id="sqrt">√</span>
+                        <span id="neg_pos">+/-</span>
+                        <span id="on-btn">On</span>
+                    </div> 
+                    <div class="digit-buttons">
+                        <div class="btn-sep">
+                            <span class="digit">7</span>
+                            <span class="digit">8</span>
+                            <span class="digit">9</span>
+                        </div>
+                        <div class="btn-sep">
+                            <span class="digit">4</span>
+                            <span class="digit">5</span>
+                            <span class="digit">6</span>
+                        </div>
+                        <div class="btn-sep">
+                            <span class="digit">1</span>
+                            <span class="digit">2</span>
+                            <span class="digit">3</span>
+                        </div>
+                        <div class="btn-sep">
+                            <span class="digit">0</span>
+                            <span class="digit">.</span>
+                            <span id="evaluate">=</span>
+                        </div>
+                            
+                    </div>
+                    <div class="basic-btns">
+                        <span class="operator">x</span>
+                        <span class="operator">+</span>
+                        <span class="operator">-</span>
+                        <span class="operator">÷</span>
+                    </div>
+                     
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/calculator.js"></script>
+</body>
+</html>
