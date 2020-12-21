@@ -59,7 +59,8 @@ buttons.forEach((btn)=>{
                 let digits = arrayToString(array_eval);
                 console.log(digits);
                 result.innerText = evaluate(`Math.sqrt(${digits})`);
-            }else{
+            }else if(memory){
+                result.innerText = evaluate(`Math.sqrt(${memory})`)
                 console.log("yep its working")
             }
         }if(event.target.id == "evaluate" && isOn()){           
@@ -130,7 +131,7 @@ function evaluate(expression){
     } catch (error) {
         return "SYNTAX ERROR";
     }
-    if (raw_result === undefined){
+    if (raw_result === undefined || raw_result === NaN){
         return "ERROR"
     }else if (`${raw_result}`.length >= 10){
         return "OVERFLOW";
